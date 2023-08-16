@@ -22,6 +22,12 @@ vim amuse.zsh-theme
 PROMPT='%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ )%{$fg_bold[blue]%}%n%u%{$fg_bold[green]%}[%~]%{$reset_color%}$(git_prompt_info)$(virtualenv_prompt_info) %{$fg_bold[yellow]%}%D{%H:%M}%{$reset_color%}$ '
 ```
 
+激活主题vim ~/.zshrc
+
+修改ZSH_THEME="amuse"
+
+
+
 插件加载
 
 1. 自动提示
@@ -46,4 +52,20 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 ```
 plugins=( [plugins...] zsh-syntax-highlighting)
+
 ```
+
+
+```
+plugins=(
+  git
+  autojump
+  urltools
+  bgnotify
+  zsh-autosuggestions
+  zsh-syntax-highlighting
+  zsh-history-enquirer
+)
+```
+
+要在root用户使用需要在root用户下安装oh-my-zsh在重复上述步骤
