@@ -21,5 +21,33 @@
 sudo apt update && sudo apt upgrade
 ```
 
+brew安装
 
+```
+/bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"
+```
+
+之后修改.zshrc
+```
+export BREW_HOME="/home/linuxbrew/.linuxbrew/bin"
+export PATH="$PATH:$BREW_HOME"
+```
+
+
+
+
+thefuck安装
+
+```
+sudo apt update
+sudo apt install python3-dev python3-pip python3-setuptools
+pip3 install thefuck --user
+```
+需要将python加入PATH，修改.zshrc
+```
+export PATH="$PATH:/usr/bin/python3"
+
+export PATH="$PATH:~/.local/bin/"
+eval $(thefuck --alias fuck)
+```
 
