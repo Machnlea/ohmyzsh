@@ -8,7 +8,7 @@
 
 ## oh-my-zsh安装
 
-使用wget
+使用wget,为root安装需要使用sudo
 ```
 sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 ```
@@ -59,12 +59,10 @@ plugins=( [plugins...] zsh-syntax-highlighting)
 ```
 plugins=(
   git
-  autojump
   urltools
   bgnotify
   zsh-autosuggestions
   zsh-syntax-highlighting
-  zsh-history-enquirer
 )
 ```
 
